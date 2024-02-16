@@ -1,4 +1,4 @@
-fetch('/assets/header.html')
+fetch('/header.html')
 .then(response => response.text())
 .then(html => {
     document.body.insertAdjacentHTML('afterbegin', html);
