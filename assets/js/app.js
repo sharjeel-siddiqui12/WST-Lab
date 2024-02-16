@@ -8,12 +8,6 @@
 
 
 
-fetch('/assets/in.html')
-.then(response => response.text())
-.then(html => {
-    document.body.insertAdjacentHTML('afterbegin', html);
-})
-.catch(error => console.error('Error fetching header:', error));
 
 
 
