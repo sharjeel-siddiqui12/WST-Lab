@@ -109,7 +109,11 @@ width: 135%;
     .btn {
         width: 80%; 
         max-width: none; 
-        margin-bottom: 20px;
+        
+    }
+
+    body{
+        margin-bottom: 30px;
     }
 }
 
