@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video &amp; Audio </title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 600 !important;
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE 10 and IE 11 */
+            user-select: none;
+            /* Standard syntax */
+            -webkit-tap-highlight-color: transparent;
+
+        }
+
+        :root {
+            --bgGradientColor: linear-gradient(to right bottom, #25CCF7, #65dbed);
+            --radioButtonColor: #25CCF7;
+            --btnColor: #25CCF7;
+            --btnHoverColor: #09b8fd;
+            --glassEffectColor: linear-gradient(to right bottom, rgba(225, 225, 225, 0.8), rgba(225, 225, 225, 0.3));
+            --blurEffect: 1.5rem;
+        }
+
+        html {
+            font-size: 62.5%;
+            /* overflow: hidden; */
+        }
+
+        .main-div {
+            background: var(--bgGradientColor);
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            gap: 10px;
+        }
+
+        .glass-div {
+            background: #fff;
+            background: var(--glassEffectColor);
+            backdrop-filter: blur(var(--blurEffect));
+            border-radius: 2rem;
+            border: .3rem solid rgba(225, 225, 225, 0.8);
+            padding: 3rem 8rem;
+            z-index: 2;
+            margin-top: 50px;
+            margin-left: 20px;
+
+        }
+
+
+        .circle1,
+        .circle2 {
+            background: #fff;
+            background: linear-gradient(to right bottom, rgba(225, 225, 225, 1), rgba(225, 225, 225, 0.5));
+            position: absolute;
+            height: 20rem;
+            width: 20rem;
+            border-radius: 50%;
+        }
+
+        .circle1 {
+            top: 5%;
+            right: 15%;
+        }
+
+        .circle2 {
+            left: 15%;
+            bottom: 5%;
+        }
+
+        .glass-div h2 {
+            font-size: 3.2rem;
+            letter-spacing: .1rem;
+            margin: 1rem 0 4rem 0;
+            /* font-family: 'Libre Baskerville', serif; */
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+
+
+        /* for website responsive */
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+
+            .glass-div
+            {
+                width: 90%;
+                padding: 3rem 5rem;
+
+            }
+            .glass-div h2
+        {
+                font-size: 2.4rem;
+                letter-spacing: .1rem;
+                margin: 1rem 0 4rem 0;
+                /* font-family: 'Libre Baskerville', serif; */
+                font-family: 'Montserrat', sans-serif;
+
+            }
+        
+
+
+            .circle1,
+            .circle2 {
+                width: 15rem;
+                height: 15rem;
+            }
+
+            .circle1 {
+                top: 2%;
+                right: 2%;
+            }
+
+            .circle2 {
+                left: 2%;
+                bottom: 2%;
+            }
+        }
+
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {}
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (max-width: 992px) {
+            .glass-div {
+                width: 80%;
+                padding: 3rem 5rem;
+            }
+
+            .glass-div h2 {
+                font-size: 2.4rem;
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="glass-div">
+            <h2 class="question">Video Player</h2>
+            <video width="500" height="300" controls>
+                <source src="/assets/media/l2vd.mp4" type="video/mp4">
+              </video>
+            
+        </div>
+        <div class="glass-div">
+            <h2 class="question">Audio Player</h2>
+            <audio controls>
+                <source src="/assets/media/l2aud.mp3" type="audio/ogg">
+              </audio>
+            
+        </div>
+    </div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+   
+</body>
+
+</html>
