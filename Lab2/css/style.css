@@ -1,0 +1,71 @@
+
+/* exercise 2 */
+body {
+    font-family: Arial, sans-serif;
+    border: 2px solid green;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top{
+    border: 2px solid green;
+    background-color: orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .top h2{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+  }
+  
+  nav {
+    border: 2px solid green;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: aqua;
+    
+  }
+  
+  
+  li {
+    border: 2px solid black;
+    background-color: green;
+    padding: 5px;
+    color: white;
+    display: inline;
+    border-radius: 5px;
+  }
+  
+  li a { 
+    padding: 30px 30px 30px 30px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .mid{
+    display: flex;
+    background-color: pink;
+    height: 450px;
+    padding-right: 100px;
+    border: 2px solid green;
+  }
+
+  .mid .block{
+    background-color: red;
+    margin-left: auto;
+    margin-top: 60px;
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+  }
+  .end{
+    height: 100px;
+    width: auto;
+    background-color: black;
+    border: 2px solid green;
+  }
+
+  /* end of exercise 2 */
+  
