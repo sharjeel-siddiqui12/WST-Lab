@@ -18,12 +18,14 @@ body {
 
 .course,
 .movie{
+    padding: 20px;
     overflow: hidden;
     background-color: #d2e8ff;
     border: 1px solid rgb(197, 197, 197);
     border-radius: 12px;
     margin-top: 20px;
 }
+
 
 h1 {
     font-family: "Trebuchet MS", sans-serif; 
@@ -37,6 +39,11 @@ p {
 
 ul, ol {
     font-family: Georgia, serif; 
+}
+
+.list li{
+    text-align: left;
+    list-style: circle;
 }
 
 a {
