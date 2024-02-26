@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pyramid Shape</title>
+    <style>
+        #pyramid {
+            font-family: monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <label for="pyramidSize">Enter the size of the pyramid:</label>
+    <input type="number" id="pyramidSize">
+    <button onclick="displayPyramid()">Display Pyramid</button>
+    <div id="pyramid"></div>
+
+    <script>
+        // Function to display a pyramid shape
+        function displayPyramid() {
+            // Get the size of the pyramid entered by the user
+            let size = document.getElementById("pyramidSize").valueAsNumber;
+
+            // Validate input
+            if (isNaN(size) || size < 1) {
+                alert("Please enter a valid positive integer for the pyramid size.");
+                return;
+            }
+
+            let pyramid = '';
+
+            // Loop to iterate over each row of the pyramid
+            for (let i = 1; i <= size; i++) {
+                // Loop to add the required number of '*' for each row
+                for (let j = 1; j <= i; j++) {
+                    pyramid += '*';
+                }
+                // Add a newline character after each row
+                pyramid += '<br>';
+            }
+
+            // Display the pyramid on the webpage
+            document.getElementById("pyramid").innerHTML = pyramid;
+        }
+    </script>
+</body>
+</html>

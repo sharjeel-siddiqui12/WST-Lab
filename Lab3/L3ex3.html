@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function calculateBMI() {
+           
+            let weightInPounds = parseFloat(prompt("Enter weight in pounds:"));
+            let heightInInches = parseFloat(prompt("Enter height in inches:"));
+
+            let bmi = (weightInPounds / (heightInInches * heightInInches)) * 703;
+
+            let weightStatus;
+            if (bmi < 18.5) {
+                weightStatus = "Underweight";
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                weightStatus = "Normal";
+            } else if (bmi >= 25 && bmi <= 29.9) {
+                weightStatus = "Overweight";
+            } else {
+                weightStatus = "Obese";
+            }
+
+            alert("BMI: " + bmi.toFixed(1) + "\nWeight Status: " + weightStatus);
+        }
+    </script>
+</head>
+<body>
+    <div class="main-div">
+        <div class="glass-div">
+            <h1>BMI Calculator</h1>
+            <button onclick="calculateBMI()" class="btn">Calculate BMI</button>
+        </div>
+    </div>
+</body>
+</html>

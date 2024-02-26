@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Function to calculate BMI based on weight in pounds and height in inches
+        function calculateBMI() {
+            // Prompt the user to enter weight in pounds and height in inches
+            let weightInPounds = parseFloat(prompt("Enter weight in pounds:"));
+            let heightInInches = parseFloat(prompt("Enter height in inches:"));
+
+            // Calculate BMI using the provided formula
+            let bmi = (weightInPounds / (heightInInches * heightInInches)) * 703;
+
+            // Display the calculated BMI
+            alert("Your BMI is: " + bmi.toFixed(1));
+        }
+    </script>
+</head>
+<body>
+
+    <div class="main-div">
+        <div class="glass-div">
+            <h1>BMI Calculator</h1>
+            <button onclick="calculateBMI()" class="btn">Calculate BMI</button>
+        </div>
+    </div>
+
+</body>
+</html>

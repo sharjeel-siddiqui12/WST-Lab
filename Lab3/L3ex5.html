@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pyramid Shape</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Function to display a pyramid shape
+        function displayPyramid() {
+            // Prompt the user to enter the size of the pyramid
+            let size = parseInt(prompt("Enter the size of the pyramid:"));
+            let pyramid = '';
+
+            // Loop to iterate over each row of the pyramid
+            for (let i = 1; i <= size; i++) {
+                // Loop to add the required number of '*' for each row
+                for (let j = 1; j <= i; j++) {
+                    pyramid += '*';
+                }
+                // Add a newline character after each row
+                pyramid += '\n';
+            }
+
+            // Display the pyramid using an alert box
+            alert(pyramid);
+        }
+    </script>
+</head>
+<body>
+    <div class="main-div">
+        <div class="glass-div">
+            <h1>Pyramid Maker</h1>
+            <button onclick="displayPyramid()" class="btn">Display Pyramid</button>
+            
+        </div>
+    </div>
+</body>
+</html>

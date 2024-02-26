@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script>
+       
+        function displayErrorAlert() {
+            alert("Error: Please enter a non-negative number.");
+        }
+
+      
+        function displayOddNumbers() {
+            let userInput = prompt("Enter a number:");
+            if (userInput < 0) {
+                displayErrorAlert();
+            } else {
+                let message = "Odd numbers from 1 to " + userInput + ":\n";
+                for (let i = 1; i <= userInput; i++) {
+                    if (i % 2 !== 0) {
+                        message += i + "\n";
+                    }
+                }
+                alert(message);
+            }
+        }
+
+      
+        function calculateFactorial() {
+            let num = prompt("Enter a number:");
+            if (num < 0) {
+                displayErrorAlert();
+            } else {
+                let factorial = 1;
+                for (let i = 1; i <= num; i++) {
+                    factorial *= i;
+                }
+                alert("Factorial of " + num + " is " + factorial);
+            }
+        }
+
+      
+        function generateSequence() {
+            let num = parseInt(prompt("Enter a number:"));
+            let sequenceType = prompt("Enter 'even' or 'odd' for the sequence:");
+            let sequence = "";
+            if (sequenceType === "even") {
+                for (let i = 0; i <= num; i += 2) {
+                    sequence += i + ",";
+                }
+            } else if (sequenceType === "odd") {
+                for (let i = 1; i <= num; i += 2) {
+                    sequence += i + ",";
+                }
+            } else {
+                alert("Invalid input. Please enter 'even' or 'odd'.");
+                return;
+            }
+            alert("Sequence: " + sequence.slice(0, -1));
+        }
+    </script>
+
+    <div class="main-div">
+    <div class="glass-div">
+        
+        <h1>Display Boxes and Functions</h1>
+       
+        <button onclick="displayErrorAlert()" class="btn">Display Error Alert</button>
+        <button onclick="displayOddNumbers()" class="btn">Display Odd Numbers</button>
+        <button onclick="calculateFactorial()" class="btn">Calculate Factorial</button>
+        <button onclick="generateSequence()" class="btn">Generate Even/Odd Sequence</button>
+    </div>
+</div>
+
+<div class="circle1"></div>
+<div class="circle2"></div>
+</body>
+</html>

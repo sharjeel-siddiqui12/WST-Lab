@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      
+        function fahrenheitToCelsius(temperature) {
+            return (temperature - 32) / 1.8;
+        }
+
+        function celsiusToFahrenheit(temperature) {
+            return (temperature * 1.8) + 32;
+        }
+
+        function convertTemperature() {
+            let choice = prompt("Enter your choice:\n1. Fahrenheit to Celsius\n2. Celsius to Fahrenheit");
+            let temperature;
+            let convertedTemperature;
+            if (choice === "1") {
+                temperature = parseFloat(prompt("Enter temperature in Fahrenheit:"));
+                convertedTemperature = fahrenheitToCelsius(temperature);
+                alert(temperature + " °F is equal to " + convertedTemperature.toFixed(2) + " °C");
+            } else if (choice === "2") {
+                temperature = parseFloat(prompt("Enter temperature in Celsius:"));
+                convertedTemperature = celsiusToFahrenheit(temperature);
+                alert(temperature + " °C is equal to " + convertedTemperature.toFixed(2) + " °F");
+            } else {
+                alert("Invalid choice.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="main-div">
+        <div class="glass-div">
+            <h1>Temperature Convertor</h1>
+            <button onclick="convertTemperature()" class="btn">Convert Temperature</button>
+        </div>
+    </div>
+</body>
+</html>
