@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pyramid Shape</title>
+    <title>Exercise 5</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.ico">
     <script>
-        // Function to display a pyramid shape
         function displayPyramid() {
-            // Prompt the user to enter the size of the pyramid
+
             let size = parseInt(prompt("Enter the size of the pyramid:"));
             let pyramid = '';
 
-            // Loop to iterate over each row of the pyramid
+
             for (let i = 1; i <= size; i++) {
-                // Loop to add the required number of '*' for each row
+    
                 for (let j = 1; j <= i; j++) {
                     pyramid += '*';
                 }
-                // Add a newline character after each row
+    
                 pyramid += '\n';
             }
 
-            // Display the pyramid using an alert box
             alert(pyramid);
         }
     </script>
