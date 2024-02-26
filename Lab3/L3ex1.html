@@ -8,15 +8,15 @@
 <body>
     <script>
        
-        function displayErrorAlert() {
+        function alertMessage() {
             alert("Error: Please enter a non-negative number.");
         }
 
       
-        function displayOddNumbers() {
+        function displayOdd() {
             let userInput = prompt("Enter a number:");
             if (userInput < 0) {
-                displayErrorAlert();
+                alertMessage();
             } else {
                 let message = "Odd numbers from 1 to " + userInput + ":\n";
                 for (let i = 1; i <= userInput; i++) {
@@ -29,10 +29,10 @@
         }
 
       
-        function calculateFactorial() {
+        function factorial() {
             let num = prompt("Enter a number:");
             if (num < 0) {
-                displayErrorAlert();
+                alertMessage();
             } else {
                 let factorial = 1;
                 for (let i = 1; i <= num; i++) {
@@ -43,7 +43,7 @@
         }
 
       
-        function generateSequence() {
+        function sequence() {
             let num = parseInt(prompt("Enter a number:"));
             let sequenceType = prompt("Enter 'even' or 'odd' for the sequence:");
             let sequence = "";
@@ -59,7 +59,7 @@
                 alert("Invalid input. Please enter 'even' or 'odd'.");
                 return;
             }
-            alert("Sequence: " + sequence.slice(0, -1));
+            alert("Sequence is: " + sequence.slice(0, -1));
         }
     </script>
 
@@ -68,10 +68,10 @@
         
         <h1>Display Boxes and Functions</h1>
        
-        <button onclick="displayErrorAlert()" class="btn">Display Error Alert</button>
-        <button onclick="displayOddNumbers()" class="btn">Display Odd Numbers</button>
-        <button onclick="calculateFactorial()" class="btn">Calculate Factorial</button>
-        <button onclick="generateSequence()" class="btn">Generate Even/Odd Sequence</button>
+        <button onclick="alertMessage()" class="btn">Display Error Message</button>
+        <button onclick="displayOdd()" class="btn">Display Odd Numbers</button>
+        <button onclick="factorial()" class="btn">Calculate Factorial</button>
+        <button onclick="sequence()" class="btn">Generate Even or Odd Sequence</button>
     </div>
 </div>
 

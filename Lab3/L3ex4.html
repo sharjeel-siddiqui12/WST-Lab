@@ -7,10 +7,10 @@
     <script>
 
         function calculateBMI() {
-            let weightInPounds = parseFloat(prompt("Enter weight in pounds:"));
-            let heightInInches = parseFloat(prompt("Enter height in inches:"));
+            let weight = parseFloat(prompt("Enter weight in pounds:"));
+            let height = parseFloat(prompt("Enter height in inches:"));
 
-            let bmi = (weightInPounds / (heightInInches * heightInInches)) * 703;
+            let bmi = (weight / (height * height)) * 703;
 
             alert("Your BMI is: " + bmi.toFixed(1));
         }
@@ -20,7 +20,7 @@
 
     <div class="main-div">
         <div class="glass-div">
-            <h1>BMI Calculator</h1>
+            <h1>BMI Calculator 2</h1>
             <button onclick="calculateBMI()" class="btn">Calculate BMI</button>
         </div>
     </div>
