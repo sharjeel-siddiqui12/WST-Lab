@@ -14,7 +14,6 @@
 
 html {
   font-size: 62.5%;
-  
 }
 
 .main-div {
@@ -34,13 +33,11 @@ html {
   backdrop-filter: blur(var(--blurEffect));
   border-radius: 2rem;
   border: .3rem solid rgba(225, 225, 225, 0.8);
-  padding: 3rem 8rem;
+  padding: 3rem 4rem; /* Decrease padding for smaller screens */
   z-index: 2;
   margin-top: 50px;
   margin-left: 20px;
-
 }
-
 
 .circle1,
 .circle2 {
@@ -65,59 +62,47 @@ html {
 .glass-div h1 {
   font-size: 3.2rem;
   letter-spacing: .1rem;
-  margin: 1rem 0 4rem 0;
+  margin: 1rem 0 2rem 0; /* Decrease margin for smaller screens */
   font-family: 'Montserrat', sans-serif;
-
 }
 
-button{
+button {
   box-shadow: 5px 5px 10px grey;
   border: transparent;
   position: relative;
   font-weight: bolder;
   font-size: larger;
   cursor: pointer;
-  margin-left: 40px;
+  margin-left: 20px; /* Adjust margin for smaller screens */
   margin-top: 10px;
   border-radius: 12px;
   height: 50px;
   width: 150px;
   background: none;
-  
-  }
-  
-  button,
-  button::after
-  {
-  
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  }
+}
 
-  
-  button::before,
-  button::after {
+button,
+button::after {
+  transition: all 0.3s;
+}
+
+button::before,
+button::after {
   background: orange;
   content: '';
   position: absolute;
   z-index: -1;
-  
-  }
+}
 
-  button:hover
-  {
+button:hover {
   color: #202345;
-  
-  }
-  
-  .btn{
+}
+
+.btn {
   overflow: hidden;
-  
-  }
-  
-  .btn::after{
+}
+
+.btn::after {
   height: 100%;
   left: -35%;
   top: 0;
@@ -125,10 +110,10 @@ button{
   transition-duration: 0.6s;
   transform-origin: top left;
   width: 0;
-  
-  }
-  
-  .btn:hover:after{
+}
+
+.btn:hover:after {
   height: 100%;
   width: 135%;
-  }
+}
+

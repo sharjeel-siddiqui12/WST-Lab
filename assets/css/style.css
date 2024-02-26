@@ -115,8 +115,16 @@ width: 135%;
     body{
         margin-bottom: 30px;
     }
+
+    .heading{
+        font-size: 5vh;
+        height: 250px;
+        text-align: center;
+        
+    }
 }
 
+  
 .mainHeader {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -128,9 +136,9 @@ width: 135%;
 /* Header styles */
 header {
     background: linear-gradient( rgb(13, 53, 65) 100%, rgba(0, 0, 0, 0.5)100%) ;
-    color: white; /* White text */
-    padding: 20px; /* Add padding */
-    text-align: center; /* Center align text */
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
 }
 
 /* Name styles */
@@ -183,6 +191,6 @@ header {
 @media screen and (max-width: 600px) {
     .name a,
     .enrollment {
-        font-size: 10px; /* Adjust font size for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
     }
 }
