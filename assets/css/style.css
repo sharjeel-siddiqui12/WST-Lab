@@ -183,6 +183,6 @@ header {
 @media screen and (max-width: 600px) {
     .name a,
     .enrollment {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 10px; /* Adjust font size for smaller screens */
     }
 }
