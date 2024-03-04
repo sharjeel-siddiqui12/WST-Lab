@@ -1,15 +1,19 @@
 body {
-    margin-top: 50px;
-    background-image: url(/Lab4/assets/img/4888945.jpg);
+    margin-top: 70px;
+	height: 100vh;
+    background: linear-gradient(to bottom right, #ffece7, #ffdfc7, #fff5ca, #effff5, #c4f0ff);
     background-position: 100%;
 }
 
 
 table {
-	border: 10px double black;
+	border: 2px solid black;
 	margin-left: auto;
 	margin-right: auto;
-	box-shadow: 30px 20px 10px rgb(0, 0, 0);
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 10);
+	border-radius: 10px;
+	padding: 10px 10px;
+	background: #ffffff;
 }
 
 input[type="button"] {
@@ -20,13 +24,14 @@ input[type="button"] {
 	font-size: 24px;
 	font-weight: bold;
 	border: none;
-	border-radius: 5px;
 	border-radius: 25px;
+	margin: 3px;
 }
  input[type="button"]:hover{
 	background-color: blue;
 	transition: 0.5s ;
 	cursor: pointer;
+	
 	
  }
 
@@ -38,6 +43,7 @@ input[type="text"] {
 	border-radius: 20px;
 	border: 2px solid black;
 	text-align: left;
+	margin-bottom: 10px;
 }
 
 display {
