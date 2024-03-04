@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Tasks</title>
+    <link rel="stylesheet" href="assets/css/ex2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Computational Tasks</h1>
+        <label for="option">Choose an option:</label>
+        <select id="option">
+            <option value="table">Generate Table</option>
+            <option value="sequence">Generate Number Sequence</option>
+            <option value="power">Generate Power</option>
+        </select>
+        <br><br>
+        <div id="inputSection">
+            <label for="input">Enter Input:</label>
+            <input type="text" id="input">
+        </div>
+        <button onclick="performTask()">Submit</button>
+        <div id="output"></div>
+    </div>
+    <script src="assets/js/ex2.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Center</title>
+    <link rel="stylesheet" href="assets/css/ex3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fast Food Center</h1>
+        <div class="menu">
+            <div class="category">
+                <h2>Starters</h2>
+                <select id="starters" multiple>
+                    <option value="Fries">Fries</option>
+                    <option value="Wings">Wings</option>
+                    <option value="Nachos">Nachos</option>
+                </select>
+                <input type="number" id="startersQuantity" placeholder="Quantity">
+            </div>
+            <div class="category">
+                <h2>Major Foods</h2>
+                <select id="majorFoods" multiple>
+                    <option value="Burger">Burger</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Sandwich">Sandwich</option>
+                </select>
+                <input type="number" id="majorFoodsQuantity" placeholder="Quantity">
+            </div>
+            <div class="category">
+                <h2>Desserts</h2>
+                <select id="desserts" multiple>
+                    <option value="Ice Cream">Ice Cream</option>
+                    <option value="Cake">Cake</option>
+                    <option value="Cookies">Cookies</option>
+                </select>
+                <input type="number" id="dessertsQuantity" placeholder="Quantity">
+            </div>
+        </div>
+        <button onclick="calculateOrder()">Calculate Order</button>
+        <textarea id="orderSummary" readonly></textarea>
+    </div>
+    <script src="assets/js/ex3.js"></script>
+</body>
+</html>
