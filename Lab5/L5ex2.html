@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipment Form</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+
+</head>
+<body>
+
+<script src="js/app.js"></script>
+
+<div class="container">
+  <h1>Shipment Form</h1>
+  <form onsubmit="return validateShipmentForm()">
+    <label for="name">Name<span style="color: red;">*</span>:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="address">Address<span style="color: red;">*</span>:</label>
+    <input type="text" id="address" name="address" required><br><br>
+    
+    <label for="city">City<span style="color: red;">*</span>:</label>
+    <input type="text" id="city" name="city" required><br><br>
+    
+    <label for="zipcode">Zip Code<span style="color: red;">*</span>:</label>
+    <input type="text" id="zipcode" name="zipcode" required><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
