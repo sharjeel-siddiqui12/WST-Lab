@@ -22,13 +22,13 @@ function validateForm() {
 
 
 function validateShipmentForm() {
-  var name = document.getElementById("name").value;
-  var address = document.getElementById("address").value;
-  var city = document.getElementById("city").value;
-  var zipcode = document.getElementById("zipcode").value;
+  let name = document.getElementById("name").value;
+  let address = document.getElementById("address").value;
+  let city = document.getElementById("city").value;
+  let zipcode = document.getElementById("zipcode").value;
 
 
-  var nameRegex = /^[A-Za-z\s]+$/;
+  let nameRegex = /^[A-Za-z\s]+$/;
 
   if (name === "" || address === "" || city === "" || zipcode === "" ) {
     alert("Please fill out all compulsory fields marked with * with valid text input.");
