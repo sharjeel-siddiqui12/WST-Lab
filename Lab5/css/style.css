@@ -40,6 +40,7 @@ input[type="submit"] {
     display: block;
     margin: 16px auto; 
 }
+
  input[type="submit"]:hover{
 
 	color: rgba(255, 255, 255, 1);
@@ -57,4 +58,19 @@ input[type="number"] {
 	border: 2px solid black;
 	text-align: left;
 	margin-bottom: 10px;
+}
+
+textarea{
+	max-width: 200px;
+	font-size: 20px;
+	font-weight: 300;
+	border-radius: 20px;
+	border: 2px solid black;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#address {
+	margin-top: -20px;
+	margin-left: 80px;
 }

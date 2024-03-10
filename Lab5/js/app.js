@@ -16,7 +16,9 @@ function validateForm() {
     alert("Name should only contain text");
     return false;
   }
+  alert("Validation Successful");
   return true;
+
 }
 
 
@@ -38,7 +40,7 @@ function validateShipmentForm() {
     alert("Name and city should only contain text");
     return false;
   }
-
+  alert("Validation Successful");
   return true;
 }
 
@@ -58,5 +60,6 @@ function validateShipmentForm() {
       alert("Please enter valid information for all fields.");
       return false;
     }
+    alert("Registration Successful");
     return true;
   }
