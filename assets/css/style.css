@@ -6,29 +6,25 @@ body {
 }
 
 a {
-    text-decoration: none; /* Remove underline from link */
+    text-decoration: none; 
 }
 
 button{
 box-shadow: 5px 5px 10px grey;
-border: 1px solid  rgb(248, 189, 80);
+border: 1px solid #83677B;
 position: relative;
 font-weight: bold;
 cursor: pointer;
 margin-left: 40px;
 margin-top: 10px;
-/* border: 1px solid orange; */
 font-size: larger;
 border-radius: 12px;
 height: 50px;
 width: 150px;
-/* background-color:orange; */
 background: none;
 
 }
 
-/* .contactBtn,
-.contactBtn::after */
 button,
 button::after
 {
@@ -38,23 +34,21 @@ button::after
 -o-transition: all 0.3s;
 transition: all 0.3s;
 }
-/* 
-.contactBtn::before,
-.contactBtn::after */
+
 
 button::before,
 button::after {
-background: orange;
+background: #83677B;
 content: '';
 position: absolute;
 z-index: -1;
 
 }
 
-/* .contactBtn:hover */
+
 button:hover
 {
-color: #202345;
+color: #ffffff;
 
 }
 
@@ -81,7 +75,7 @@ width: 135%;
 .heading{
     margin-top: 0%;
     color: white;
-    background: linear-gradient( rgba(21,82,99) 100%, rgba(0, 0, 0, 0.5)100%) ;
+    background-color: #501B1D;
     display: flex;
     font-weight: 900;
     font-family: 'Raleway', sans-serif;
@@ -98,7 +92,7 @@ width: 135%;
 }
 
 .heading a {
-    color: white; /* White color for links within the name */
+    color: white; 
 
 }
 
@@ -130,67 +124,65 @@ width: 135%;
     margin: 0;
     padding-top: 20px;
     padding-bottom: 30px;
-    margin-bottom: 10px;
-}
-
-/* Header styles */
-header {
-    background: linear-gradient( rgb(13, 53, 65) 100%, rgba(0, 0, 0, 0.5)100%) ;
+    margin-bottom: 15px;
+    background-color:  #2E1114 ;
     color: white; 
     padding: 20px; 
     text-align: center; 
+
 }
 
-/* Name styles */
+
 .name {
-    font-size: 24px; /* Larger font size for name */
-    font-weight: bold; /* Bold font weight */
-    margin-bottom: 10px; /* Add margin at bottom */
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
 }
 
 
 .name a {
-    color: white; /* White color for links within the name */
-    text-decoration: none; /* Remove underline from links */
-    position: relative; /* Enable relative positioning */
+    color: white; 
+    text-decoration: none; 
+    position: relative; 
 }
 
 .enrollment {
-    font-size: 19px; /* Smaller font size for enrollment number */
+    font-size: 19px; 
+    margin-bottom: 8px; 
 }
 
 
 .name a,
 .enrollment {
-    position: relative; /* Enable relative positioning */
-    display: inline-block; /* Ensure inline-block layout */
-    color: white; /* White color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Smooth color transition */
+    position: relative; 
+    display: inline-block; 
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s; 
 }
 
 .name a::before,
 .enrollment::before {
     content: '';
     position: absolute;
-    bottom: -3px; /* Adjust position of underline */
-    left: 50%; /* Start from the middle */
+    bottom: -3px; 
+    left: 50%;
     width: 0;
-    height: 2px; /* Underline height */
-    background-color: rgb(95, 164, 255); /* Orange color */
-    transition: width 0.3s; /* Transition effect */
-    transform: translateX(-50%); /* Center the underline */
+    height: 2px; 
+    background-color: rgb(255, 255, 255); 
+    transition: width 0.3s;
+    transform: translateX(-50%); 
 }
 
 .name a:hover::before,
 .enrollment:hover::before {
-    width: calc(90% - 20px); /* Expand the underline on hover */
+    width: calc(90% - 20px); 
 }
 
-/* Responsive styles */
+
 @media screen and (max-width: 600px) {
     .name a,
     .enrollment {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 18px;
     }
 }
