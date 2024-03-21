@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="css/ex3.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="js/ex3.js"></script>
+   
+</head>
+<body>
+
+<div class="container">
+<table>
+    <h2 class="mainHeading">Leave Application Form</h2>
+    
+    <tr>
+        <td class="label"><label for="employeeName">Name of Employee:</label></td>
+        <td><input type="text" id="employeeName"></td>
+    </tr>
+    <tr>
+        <td class="label"><label for="designation">Designation:</label></td>
+        <td><input type="text" id="designation"></td>
+    </tr>
+    <tr>
+        <td class="label"><label for="department">Department:</label></td>
+        <td><input type="text" id="department"></td>
+    </tr>
+    <tr>
+        <td class="label"><label for="datepickerFrom">Leave Date From:</label></td>
+        <td><input type="text" id="datepickerFrom"></td>
+    </tr>
+    <tr>
+        <td class="label"><label for="datepickerTo">To:</label></td>
+        <td><input type="text" id="datepickerTo"></td>
+    </tr>
+    <tr>
+        <td class="label"><label for="reason">Reason:</label></td>
+        <td><textarea id="reason"></textarea></td>
+    </tr>
+</table>
+
+<div id="accordion">
+    <h3>Signature</h3>
+    <div>
+        <table>
+            <tr>
+                <td class="label"><label for="employeeSignature">Employee:</label></td>
+                <td><input type="text" id="employeeSignature"></td>
+            </tr>
+            <tr style="background-color: white;">
+                <td class="label"><label for="hodSignature">H.O.D:</label></td>
+                <td><input type="text" id="hodSignature"></td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Approval</h3>
+    <div>
+        <table>
+            <tr>
+                <td class="label"><label for="directorApproval">Director:</label></td>
+                <td><input type="text" id="directorApproval"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

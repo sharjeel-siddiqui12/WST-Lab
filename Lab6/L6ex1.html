@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise 1</title>
+<link rel="stylesheet" href="css/ex1.css">
+<link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+</head>
+<body>
+<div class="container">
+<form id="cityForm">
+  <label for="firstName">Name:</label>
+  <input type="text" id="firstName" name="firstName" required><br><br>
+
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required><br><br>
+  
+  
+  
+  <label for="fileInput">Select a file:</label>
+  <input type="file" id="fileInput" name="fileInput"><br><br>
+
+  <label id="messagelbl" for="message">Message:</label>
+  <br>
+  <textarea name="message" id="message" cols="27" rows="5" required></textarea><br><br>
+  
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="0">Select Country</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="USA">USA</option>
+    <option value="Other">Other</option>
+  </select>
+  
+  <div id="cityDropdown" style="display:none;">
+    <label for="city">City:</label>
+    <select id="city" name="city">
+      <option value="0">Select City</option>
+      
+    </select>
+  </div>
+  
+  <div id="cityInput" style="display:none;">
+    <label for="otherCity">City:</label>
+    <input type="text" id="otherCity" name="otherCity">
+  </div>
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/ex1.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/ex2.css">
+  <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+</head>
+<body>
+  <div class="container">
+  <table>
+    <tr>
+      <td><p>User Name:</p></td>
+      <td><input type="text" id="UName"></td>
+    </tr>
+    <tr>
+      <td><p>Password:</p></td>
+      <td><input type="password" id="Password"></td>
+    </tr>
+  </table>
+</div>
+
+  <script>
+    $(document).ready(function(){
+      $('#UName').on('keydown', function(e) {
+        e.preventDefault();
+      });
+    });
+  </script>
+</body>
+</html>

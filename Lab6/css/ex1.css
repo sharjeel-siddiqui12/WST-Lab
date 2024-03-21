@@ -1,0 +1,100 @@
+body {
+    margin-top: 70px;
+	height: 100vh;
+    background-position: 100%;
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+
+h1 {
+    text-align: center;
+    color: #4700a5;
+	margin-bottom: 30px;
+}
+
+.container {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 7),
+                -20px -20px 30px rgba(187, 187, 187, 0.2) inset;
+	border-radius: 10px;
+	padding: 30px 30px 20px;
+	background: #ffffff;
+	
+}
+
+input[type="submit"] {
+
+	height: 7vh;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(145, 92, 182);
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    width: 80%;
+    display: block;
+    margin: 16px auto; 
+}
+
+ input[type="submit"]:hover{
+
+	color: rgba(255, 255, 255, 1);
+    box-shadow: 0 15px 40px rgba(145, 92, 182, .8);
+	cursor: pointer;
+ }
+
+input[type="text"], 
+input[type="number"],
+input[type="password"]
+ {
+	max-width: 200px;
+	font-size: 20px;
+	font-weight: 300;
+	border-radius: 20px;
+	border: 2px solid black;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+input[type="file"]
+ {
+	max-width: 300px;
+	font-size: 20px;
+	font-weight: 300;
+	border-radius: 20px;
+	border: 2px solid black;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+
+select {
+    max-width: 200px;
+	
+	font-size: 20px;
+	font-weight: 300;
+	border-radius: 20px;
+	border: 2px solid black;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+textarea{
+	max-width: 200px;
+	font-size: 20px;
+	font-weight: 300;
+	border-radius: 20px;
+	border: 2px solid black;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#message {
+	margin-top: -20px;
+	margin-left: 80px;
+}
