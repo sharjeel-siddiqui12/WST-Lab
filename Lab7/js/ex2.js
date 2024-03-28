@@ -4,6 +4,7 @@ function validateForm() {
   let expiryYear = document.getElementById("expiryYear").value;
   let cvv = document.getElementById("cvv").value;
   let nameOnCard = document.getElementById("nameOnCard").value;
+  const cardNumberRegex = /^\d{4}-\d{4}-\d{4}-\d{4}$/;
 
   if (cardNumber.trim() == "") {
       alert("Please enter the card number.");
@@ -30,6 +31,10 @@ function validateForm() {
       return false;
   }
 
+  if(!cardNumberRegex.test(cardNumber)){
+    alert('Please enter a valid format xxxx-xxxx-xxxx-xxxx');
+    return;
+  }
       alert("Validation Successful");
       return true;
   
