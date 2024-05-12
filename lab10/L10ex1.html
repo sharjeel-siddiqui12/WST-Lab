@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 1</title>
+    <link rel="stylesheet" href="php&css/L10ex1.css">
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form action="php&css/L10ex1.php" method="post">
+        <label for="name">Name</label><span style="color: red;">*</span><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="city">City</label><span style="color: red;">*</span><br>
+        <input type="text" id="city" name="city" required><br>
+        
+        <label for="pincode">Pincode</label><span style="color: red;">*</span><br>
+        <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required><br>
+        
+        <label for="email">Email</label><span style="color: red;">*</span><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
