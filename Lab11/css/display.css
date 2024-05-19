@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-position: 100%;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(199, 149, 223) 0%, rgb(171, 210, 255) 100%);
+    padding-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
