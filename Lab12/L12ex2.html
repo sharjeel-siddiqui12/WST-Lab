@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Search</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h1 {
+            color: white;
+        }
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+            margin: auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loading {
+            display: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="container mt-5">
+        <h1 class="text-center">University Search</h1>
+        <div class="text-center mb-4">
+            <input type="text" id="countryInput" class="form-control mb-2" placeholder="Enter country">
+            <button id="searchButton" class="btn btn-primary">Search Universities</button>
+        </div>
+        <div class="loading" id="loadingState">
+            <div class="loader"></div>
+        </div>
+        <table class="table table-dark table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody id="universityTable">
+            </tbody>
+        </table>
+    </div>
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const country = document.getElementById('countryInput').value;
+            getUniversities(country);
+        });
+
+        function getUniversities(country) {
+            return new Promise((resolve, reject) => {
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', `http://universities.hipolabs.com/search?country=${country}`, true);
+
+                xhr.onloadstart = function() {
+                    document.getElementById('loadingState').style.display = 'block';
+                };
+
+                xhr.onloadend = function() {
+                    document.getElementById('loadingState').style.display = 'none';
+                };
+
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        const universities = JSON.parse(xhr.responseText);
+                        resolve(universities);
+                        displayUniversities(universities);
+                    } else {
+                        reject('Error fetching universities');
+                    }
+                };
+
+                xhr.onerror = function() {
+                    reject('Request error');
+                };
+
+                xhr.send();
+            });
+        }
+
+        function displayUniversities(universities) {
+            const tableBody = document.getElementById('universityTable');
+            tableBody.innerHTML = '';
+            universities.forEach(university => {
+                const row = document.createElement('tr');
+                const nameCell = document.createElement('td');
+                const websiteCell = document.createElement('td');
+
+                nameCell.innerText = university.name;
+                websiteCell.innerHTML = `<a href="${university.web_pages[0]}" target="_blank">${university.web_pages[0]}</a>`;
+
+                row.appendChild(nameCell);
+                row.appendChild(websiteCell);
+                tableBody.appendChild(row);
+            });
+        }
+    </script>
+</body>
+</html>

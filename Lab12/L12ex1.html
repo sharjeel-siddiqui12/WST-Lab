@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Database</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#allEmployees").click(function(){
+            $.ajax({
+                url: 'EmpDisplay.php',
+                success: function(data){
+                    $("#result").html(data);
+                }
+            });
+        });
+        $("#top3Employees").click(function(){
+            $.ajax({
+                url: 'EmpDisplay_Top3.php',
+                success: function(data){
+                    $("#result").html(data);
+                }
+            });
+        });
+    });
+    </script>
+
+    <style>
+        h1{
+            color: white;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="container mt-5">
+        <h1 class="text-center">Employee Database</h1>
+        <div class="text-center mb-4">
+            <button id="allEmployees" class="btn btn-primary mr-2">Display All Employees</button>
+            <button id="top3Employees" class="btn btn-success">Display Top 3 Employees with Highest Salary</button>
+        </div>
+        <div id="result" class="mt-4"></div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
