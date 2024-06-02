@@ -1,9 +1,9 @@
 <?php include "conn.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
-    $password = md5($_POST['password']); // Encrypt the password with MD5
+    $password = md5($_POST['password']); 
 
-    // Insert user into the database
+   
     $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
 
     if ($conn->query($sql) === TRUE) {
